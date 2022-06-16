@@ -16,14 +16,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         vFlip = findViewById(R.id.vflip);
-        vFlip.setFlipInterval(100);
-        editInterval  =
-        Button btnPrev = findViewById(R.id.btn_start);
-        Button btnNext = findViewById(R.id.btn_stop);
+        // vFlip.setFlipInterval(1000);
+        editInterval = findViewById(R.id.edit_interval);
+        Button btnstart = findViewById(R.id.btn_start);
+        Button btnstop = findViewById(R.id.btn_stop);
         Button btnsecond = findViewById(R.id.btn_second);
 
-        btnPrev.setOnClickListener(btnListener);
-        btnNext.setOnClickListener(btnListener);
+        btnstart.setOnClickListener(btnListener);
+        btnstop.setOnClickListener(btnListener);
+        btnsecond.setOnClickListener(btnListener);
     }
 
     View.OnClickListener btnListener = new View.OnClickListener() {
